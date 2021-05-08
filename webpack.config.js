@@ -21,18 +21,18 @@ module.exports = () => {
   ];
 
   // Include tests in development builds
-  //  if (!IS_PRODUCTION) {
-  //    entry.tests = glob.sync('./tests/**/*.test.js');
-  //
-  //    plugins.push(
-  //      new HtmlWebpackPlugin({
-  //        filename: 'tests/index.html',
-  //        template: './tests/index.html',
-  //        inject: 'head',
-  //        chunks: ['tests'],
-  //      })
-  //    );
-  //  }
+  if (!IS_PRODUCTION) {
+    entry.tests = glob.sync('./tests/**/*.test.js');
+
+    plugins.push(
+      new HtmlWebpackPlugin({
+        filename: 'tests/index.html',
+        template: './tests/index.html',
+        inject: 'head',
+        chunks: ['tests'],
+      })
+    );
+  }
 
   return {
     mode: IS_PRODUCTION ? 'production' : 'development',
