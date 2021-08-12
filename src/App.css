@@ -45,16 +45,24 @@ body {
   margin-bottom: 2rem;
 }
 
-.hbs {
+#hbs {
   border: 1px solid;
   border-radius: 1rem;
   padding: .5rem;
   background-color: #ffffcc;
 }
 
-.gjs {
+#gjs {
   border: 1px solid;
   border-radius: 1rem;
   padding: .5rem;
   background-color: #ccccff;
+}
+
+#github-logo a {
+  float: right;
+}
+
+#github-logo img{
+  width: 3rem;
 }
