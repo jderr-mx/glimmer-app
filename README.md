@@ -4,10 +4,12 @@ Quick setup for a standalone glimmer app using the [@glimmerx](https://github.co
 
 It is based on the @glimmerx application blueprint
 
+[Demo Site](https://glimmer-app.coffeeintocode.com)
+
 Clone the repo and install dependencies using the dependency tool of your choice, I used yarn
 
 `yarn` to install the dependencies
-`yarn start` to start the webpack-dev-server
+`yarn start` to start webpack dev server 
 point your browser to https://localhost:8080
 
 `index.js` renders the root component inside of `#app` in index.html
