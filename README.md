@@ -1,9 +1,10 @@
 # Glimmer-app
 
-Quick setup for a standalone glimmer app using the [@glimmerx](https://github.com/glimmerjs/glimmer-experimental) apis
+Quick setup for a standalone glimmer app using the [@glimmerx](https://github.com/glimmerjs/glimmer-experimental) apis.
+
 It is based on the @glimmerx application blueprint
 
-Clone the repo and run install the dependency tool of your choice, I used yarn
+Clone the repo and install dependencies using the dependency tool of your choice, I used yarn
 
 `yarn` to install the dependencies
 `yarn start` to start the webpack-dev-server
@@ -18,7 +19,7 @@ Both components have examples of using local inline components
 Check out the ember-template-imports [README](https://github.com/ember-template-imports/ember-template-imports) for more detailed
 examples of the component template apis  
 
-`Hbs.js` imports `hbs` to render the template as an template literal
+__Hbs.js__ imports `hbs` to render the template as an template literal
 ```javascript
 import Component, { hbs } from '@glimmerx/component';
 
@@ -29,9 +30,10 @@ export default class Hbs extends Component {
     <div>This component is rendered using <code>hbs</code> in a .js file</div>
     <InlineComponent/>
   `;
-}```
+}
+```
 
-`Gjs.gjs` uses the `<template>` tag to render the template inline 
+__Gjs.js__ uses the `<template>` tag to render the template inline 
 ```javascript
 import Component from '@glimmerx/component';
 
