@@ -44,3 +44,17 @@ body {
 #examples div {
   margin-bottom: 2rem;
 }
+
+.hbs {
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: .5rem;
+  background-color: #ffffcc;
+}
+
+.gjs {
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: .5rem;
+  background-color: #ccccff;
+}

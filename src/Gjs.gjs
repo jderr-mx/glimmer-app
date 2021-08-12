@@ -7,7 +7,9 @@ const InlineComponentTemplate = <template>
 
 export default class Gjs extends Component {
   <template>
-    <div>This component is rendered using <CodeTag>template</CodeTag> tag in a .gjs file</div>
-    <InlineComponentTemplate/>
+    <div class="gjs">
+      <div>This component is rendered using <CodeTag>template</CodeTag> tag in a .gjs file</div>
+      <InlineComponentTemplate/>
+    </div>
   </template>
 }

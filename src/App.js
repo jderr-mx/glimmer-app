@@ -17,6 +17,7 @@ export default class App extends Component {
       </h3>
     </div>
     <div id="examples">
+      <h4>Example Components</h4>
       <Hbs/>
       <Gjs/>
     </div>
