@@ -1,9 +1,11 @@
 import Component, { hbs } from '@glimmerx/component';
-
-// import logo from './logo.svg';
-// import './App.css';
+import Hbs from './Hbs';
+import Gjs from './Gjs';
+import logo from './logo.svg';
+import './App.css';
 
 export default class App extends Component {
+  logo = logo;
   static template = hbs`
     <div id="intro">
       <img src={{this.logo}}/>
@@ -13,6 +15,10 @@ export default class App extends Component {
         you can get started by editing <code>src/App.js</code>,
         and run tests by visiting <a href="./tests">/tests</a>
       </h3>
+    </div>
+    <div id="examples">
+      <Hbs/>
+      <Gjs/>
     </div>
     `;
 }
