@@ -1,12 +1,12 @@
 const path = require('path');
 const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = () => {
   const IS_PRODUCTION = process.env.NODE_ENV === 'production';
-
   const entry = {
     app: './src/index.js',
   };
@@ -18,6 +18,7 @@ module.exports = () => {
       excludeChunks: ['tests'],
     }),
     new CopyPlugin([{ from: 'public', to: 'public' }]),
+    new MiniCssExtractPlugin(),
   ];
 
   // Include tests in development builds
@@ -46,7 +47,7 @@ module.exports = () => {
         },
         {
           test: /\.css$/,
-          use: ['style-loader', 'css-loader'],
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
         },
         {
           test: /\.(png|svg|jpg|gif)$/,

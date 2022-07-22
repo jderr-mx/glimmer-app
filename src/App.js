@@ -3,7 +3,7 @@ import Hbs from './Hbs';
 import Gjs from './Gjs';
 import logo from './logo.svg';
 import githubLogo from './github-icon-light.svg';
-import './App.css';
+import './styles/app.css';
 
 export default class App extends Component {
   logo = logo;
